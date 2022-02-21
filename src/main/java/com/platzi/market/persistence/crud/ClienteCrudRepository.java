@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ClienteCrudRepository extends CrudRepository<Cliente, String> {
 
-    List<Cliente> findByNombreOrderAsc(String nombre);
+    List<Cliente> findByNombre(String nombre);
 
     Cliente findByNombreEquals(String nombre);
 

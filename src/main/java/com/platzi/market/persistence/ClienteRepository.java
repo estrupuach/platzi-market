@@ -9,7 +9,7 @@ public class ClienteRepository {
     ClienteCrudRepository clienteCrudRepository;
 
     public List<Cliente> findByNombre(String nombre){
-        return clienteCrudRepository.findByNombreOrderAsc(nombre);
+        return clienteCrudRepository.findByNombre(nombre);
     }
     public Cliente findByNombreIs(String nombre){
         return clienteCrudRepository.findByNombreEquals(nombre);

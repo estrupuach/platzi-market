@@ -1,7 +1,6 @@
 package com.platzi.market.persistence.entity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "productos")
@@ -86,5 +85,13 @@ public class Producto {
 
     public void setEstado(boolean estado) {
         this.estado = estado;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 }
